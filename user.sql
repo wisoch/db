@@ -56,9 +56,9 @@ CREATE TABLE IF NOT EXISTS `user_real`
     `realname`      VARCHAR(60) NOT NULL DEFAULT '' COMMENT '真实姓名',
     `type`          INT         NOT NULL DEFAULT 0  COMMENT '证件类别：1身份证',
     `number`        VARCHAR(60) NOT NULL DEFAULT '' COMMENT '证件号码',
-    `front_img_id` VARCHAR(60) NOT NULL DEFAULT '' COMMENT '证件正面照:{url":""}',
-    `back_img_id`  VARCHAR(60) NOT NULL DEFAULT '' COMMENT '证件背面照:{url":""}',
-    `hand_img_id`  VARCHAR(60) NOT NULL DEFAULT '' COMMENT '手持证件照:{url":""}',
+    `front_img_id`  VARCHAR(60) NOT NULL DEFAULT '' COMMENT '证件正面照:{url":""}',
+    `back_img_id`   VARCHAR(60) NOT NULL DEFAULT '' COMMENT '证件背面照:{url":""}',
+    `hand_img_id`   VARCHAR(60) NOT NULL DEFAULT '' COMMENT '手持证件照:{url":""}',
     `status`        INT         NOT NULL DEFAULT 0  COMMENT '审核状态: 0待审核 1审核通过 2审核不通过',
     `status_memo`   VARCHAR(60) NOT NULL DEFAULT '' COMMENT '备注',
 
