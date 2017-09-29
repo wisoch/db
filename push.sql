@@ -4,11 +4,12 @@
 -- ------------------------------------------------
 CREATE TABLE IF NOT EXISTS `push_device` (
     `id`            INT          NOT NULL AUTO_INCREMENT COMMENT '自增',
-    `device_id`     CHAR(20)     NOT NULL DEFAULT 0  COMMENT '设备ID',
+
+    `device_id`     INT          NOT NULL DEFAULT 0  COMMENT '设备ID',
     `uuid`          VARCHAR(120) NOT NULL DEFAULT '' COMMENT '设备唯一ID',
     `app_name`      VARCHAR(120) NOT NULL DEFAULT '' COMMENT 'APP名称',
     `app_version`   VARCHAR(10)  NOT NULL DEFAULT '' COMMENT 'APP版本',
-    `app_build_id`  VARCHAR(10)  NOT NULL DEFAULT '' COMMENT 'APPbuild号',
+    `app_build`     VARCHAR(10)  NOT NULL DEFAULT '' COMMENT 'APPbuild号',
     `os_name`       VARCHAR(120) NOT NULL DEFAULT '' COMMENT 'OS名称',
     `os_model`      VARCHAR(120) NOT NULL DEFAULT '' COMMENT 'OS型号',
     `os_model_name` VARCHAR(120) NOT NULL DEFAULT '' COMMENT 'OS型号名称',
