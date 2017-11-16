@@ -4,6 +4,7 @@
 -- ------------------------------------------------
 CREATE TABLE IF NOT EXISTS `pay_receipt` (
     `id`                  INT            NOT NULL AUTO_INCREMENT COMMENT '自增',
+
     `uid`                 INT            NOT NULL DEFAULT 0    COMMENT '用户ID',
     `order_id`            CHAR(20)       NOT NULL DEFAULT ''   COMMENT '订单号',
     `title`               VARCHAR(120)   NOT NULL DEFAULT 0    COMMENT '订单名称',
@@ -29,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `pay_receipt` (
 
 CREATE TABLE IF NOT EXISTS `pay_refund` (
     `id`                  INT            NOT NULL AUTO_INCREMENT COMMENT '自增',
+
     `uid`                 INT            NOT NULL DEFAULT 0    COMMENT '用户ID',
     `order_id`            CHAR(20)       NOT NULL DEFAULT 0    COMMENT '订单号',
     `title`               VARCHAR(120)   NOT NULL DEFAULT 0    COMMENT '订单名称',
@@ -54,6 +56,7 @@ CREATE TABLE IF NOT EXISTS `pay_refund` (
 
 CREATE TABLE IF NOT EXISTS `pay_trade` (
     `id`            INT            NOT NULL AUTO_INCREMENT COMMENT '自增',
+    
     `uid`           INT            NOT NULL DEFAULT 0    COMMENT '用户ID',
     `trade_id`      CHAR(20)       NOT NULL DEFAULT 0    COMMENT '交易号',
     `trade_amount`  DECIMAL(10, 2) NOT NULL DEFAULT 0.00 COMMENT '金额',
